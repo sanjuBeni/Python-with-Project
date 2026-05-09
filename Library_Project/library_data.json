@@ -1,0 +1,65 @@
+{
+    "books": [
+        {
+            "id": "B-PTF1T",
+            "title": "Game of Thore",
+            "author": "Jack",
+            "copies": 50,
+            "available_copies": 50,
+            "add_on": "2026-05-09 11:11:17"
+        },
+        {
+            "id": "B-8OSH4",
+            "title": "Harry Poter",
+            "author": "Peter",
+            "copies": 15,
+            "available_copies": 15,
+            "add_on": "2026-05-09 15:57:53"
+        },
+        {
+            "id": "B-U2529",
+            "title": "XYZ",
+            "author": "PO",
+            "copies": 90,
+            "available_copies": 70,
+            "add_on": "2026-05-09 15:58:50"
+        }
+    ],
+    "members": [
+        {
+            "id": "M-QU7PX",
+            "name": "Sanjay",
+            "email": "sanjay@ex.com",
+            "borrow": [
+                {
+                    "book_id": "B-PTF1T",
+                    "no_of_books": 0,
+                    "is_return": "Y",
+                    "update_on": "2026-05-09 15:56:29"
+                }
+            ],
+            "add_on": "2026-05-09 11:11:17",
+            "update_on": "2026-05-09 13:11:33"
+        },
+        {
+            "id": "M-NLZ7D",
+            "name": "Jack",
+            "email": "jack@ex.com",
+            "borrow": [],
+            "add_on": "2026-05-09 11:30:27"
+        },
+        {
+            "id": "M-H4CST",
+            "name": "Tester",
+            "email": "test@test.com",
+            "borrow": [
+                {
+                    "book_id": "B-U2529",
+                    "no_of_books": 20
+                }
+            ],
+            "add_on": "2026-05-09 15:59:19",
+            "update_on": "2026-05-09 16:11:04"
+        }
+    ]
+}

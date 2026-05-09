@@ -1,0 +1,23 @@
+"""
+    Module: A module is a Python (.py) file that contains,
+        a. Variables
+        b. functions
+        c. classes
+        d. reusable the code
+
+    Module is help to organize the code and reusable the code like math_utils.py, string_utils.py, constant.py
+
+    1. User define module: Make by developer
+    2. Built-in modules: Python provides modules like math, random, os, datetime, json, pathlib, etc
+
+"""
+
+"""
+    Package: Package is contains the modules
+
+    __init__.py     :   It is a special file that tell Pythons, this folder treated as package
+
+    some package : numpy, pandas, matplot, etc
+
+
+"""

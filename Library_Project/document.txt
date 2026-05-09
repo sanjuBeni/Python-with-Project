@@ -1,0 +1,97 @@
+"""
+    Library Management System
+
+    # Books
+    1. Add book with title, author, copies, available_copies, add_on
+    2. List books
+
+    # Members
+    1. Add a member (name, is_active, add_on)
+    2. List members
+    3. Borrow Books
+    4. Return Books
+    5. Exist the Portal
+"""
+
+"""
+Connection Document
+    Now we have not connection with DB(Database), we try to create or import JSON file and make a crud operation on it.
+    JSON file format required
+    {
+        "books" : list of dictionary
+        "members" : list of dictionary
+    }
+
+    json.dump(): Write JSON date into a file
+    json.dumps(): Convert python object into a JSON string
+    json.loads(): ___
+"""
+
+"""
+    Connection Rules
+
+        1. In over project connection_with_file is a function that help to connect with json file.
+        2. This function take 2 parameter one is is_fetch, data, when is_fetch is True then return the all file data, and is_fetch is False then insert the data into file.
+
+    Condition:
+
+        1. If file is not exist then create a file.
+
+"""
+
+"""
+    Library Management Class
+
+        class method need: gen_id(Prefix), add_data(key, data)
+
+        object method: add_book(), get_book(), add_member(), get_member(), borrow_book(), return_book()
+
+        1. Add Books    
+            a. Add a book with title, author, copies(Total books)
+            b. generate a unique id for book, that unique id is generate with gen_id class method
+
+        Condition for add book  
+            a. Title is required, and length more then 3 charater
+            b. At least one copies is required
+            c. Author name also required, and at least 3 charater take
+            d. Check the book is already exist or not, if exist show book already exist
+
+        2. Get Books
+            Fetch data from the file
+
+        3. Add member
+            a. Add a member with name, email, borrow_book
+            b. generate a unique id for member
+
+        Condition for Add Member
+            a. Name is required with at least 3 charater
+            b. email is required with email format
+
+        4. Get Members
+            Fetch data form the file
+
+
+        5. Borrow Books
+            1. Who's Member borrow book
+            2. Which book is borrow
+            3. How many copies of book borrow
+
+        Condition
+            1. Check member is exist or not
+            2. Check book have or not, and also Check the available_copies is more then 0
+            3. Also Check the borrow copies is not more then available_copies
+            4. If member already borrow this book then same member id data can be updated
+
+
+        6. Return Books
+            1. Who's return the book
+            2. Which one book return
+            3. How many book return
+
+        Condition:
+            1. Check member and book name exist or not
+            2. Also Check the member borrow this book or not
+            3. Add return book in available_copies, and update the data 
+
+
+"""
