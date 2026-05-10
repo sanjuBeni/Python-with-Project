@@ -1,0 +1,140 @@
+
+"""
+    What is OOPs?
+        OOPs stand for Object Oriented Programming.
+        It is used for organized the code and reusable the code
+        It's mean we can run program and manage the information with the help of object.
+        And that object is contain the multiple method and variables, according to requirement we can use these kinds of methods and variables.
+
+    OOPs Pillars:
+        Class - A class is a blueprint for an object. It contains the attributes(variables) and methods.
+
+        Object - An object is instance of class. With object we can access the property and method of a class. 
+
+        Encapsulation : Provide security to our code
+        Inheritance : One class take feature of another class
+        Abstraction : Hiding the functionality of code
+        Polymorphism : Having many form
+
+
+"""
+
+"""
+    Constructor: A constructor is a dunder method or magic method, that is call automatically when  we create an object of a class
+    In python __init__(self) ==> is a constructor
+    
+    What is self key?
+        Self keyword store the location of an object.
+        We can make the multiple object of a class, and each object is allocated a perticular memory.
+        With the help of this we can easly to access the diff-2 values for the objects
+
+"""
+
+BasicNotes.py
+"""
+    Instance Attributes: Instance attributes are created by the self keyword, and these attributes are define inside the constructor(__init__). Like self.name, self.age
+
+    Class Attributes: Attributes are created without self keyword called class attributes, and these attributes save value for diff-2 object, if value change with object then this value is impact on the specific object.
+
+    Instance Method: A method that created with self parameter, this method is called instance method.
+
+    Class Method: Class method is created with the help of @classmethod decorator, and class method take the cls parameter.
+
+    Satic Method: Method is created with @staticmethod decorator, and it is not depend on the   instance or class data, and not take the self or cls parameter.
+    Static Method is used where we do not want to instance or cls data
+
+    Without instance we can use it like:
+        Classname.staticmethod
+
+"""
+
+/Inheritance
+"""
+    Inheritance: A class that use the another class properties and method
+
+    Type:
+        1. Single level Inheritance
+            class Class_2(Class_1) :
+                pass
+
+        2. Multiple Inheritance
+            class Class_3(Class_1, Class_2):
+                pass
+
+        3. Multilevel Inheritance
+            class class_2(Class_1)
+                pass
+
+            class class_3(class_2):
+                pass
+
+        4. Hierarchical Inheritance
+            class Class_2(class_1):
+                pass
+
+            class Class_3(class_2):
+                pass
+"""
+
+"""
+    Encapsulation: Encapsulation mean binding the data inside a single unit like attributes and methods.
+        Good example of the Encapsulation is class
+        It is control the access of the attributes and method
+        Basically we can access the data 3 access modifier types
+            1. Public -> Access any where
+            2. Protected -> Self class or child class (In python access any where)
+            3. Private -> Only access inside class
+
+            In Pythen Protected can define with single undeerscore, and Private can define with double undeerscore
+
+            class A:
+                # Public
+                name = "Clg Name"
+                # Protected
+                _db = "xyz"
+                # Private
+                __DB_NAME = "ABC"
+"""
+
+
+"""
+    Abstraction: Abstraction mean Hiding the unnecessary implementation details, only show the features to the user
+        An abstract class must contain at least one abstract method.
+        Child classes must implement it
+
+        EX: 
+            you use steering, brake, and accelerator
+            you do not need to know the internal engine mechanism
+
+        In python abc is a package, where we can get the abstractmethod
+        from abc import ABC, abstractmethod
+        class Vehicle(ABC):
+            @abstractmethod
+            def start(self):
+                pass
+"""
+
+"""
+
+    Polymorphism: Polymorphism is many form. It is the concept of the method overloading and orverriding.
+        Overloading mean same name method, but ditff-2 parameter or different behavior in a class called overloading. Overloading not found in Python
+        
+        Overriding mean same name method, inside the child class, and it this method can have same parameter. It is call by supper method
+
+        What is supper method?
+            supper method is used to call the parent class constructor, and parent class Overriding method
+
+"""
+
+
+"""
+    Dunder Methods:- Dunder methods are special method that change the behavior of the object. These methods are start and end with double underscores. 
+
+    __init__ is also a Dunder methods
+    some useful Dunder Methods
+        __str__
+        __eq__
+        __add__
+        ,etc 
+
+"""
